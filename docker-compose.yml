@@ -26,3 +26,4 @@ services:
       - ./transcode/temp>:/transcode 
       - /media/rocean/Spartacus/Movies:/data
       - /media/rocean/Spartacus/TV:/data
+    network: host
