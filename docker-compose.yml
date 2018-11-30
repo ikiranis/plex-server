@@ -24,4 +24,5 @@ services:
     volumes: 
       - ./database:/config 
       - ./transcode/temp>:/transcode 
-      - /Volumes/Share/Spartacus/Movies:/data 
+      - /media/rocean/Spartacus/Movies:/data
+      - /media/rocean/Spartacus/TV:/data
