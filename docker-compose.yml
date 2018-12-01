@@ -17,13 +17,13 @@ services:
       - 32413:32413/udp 
       - 32414:32414/udp 
     environment:
-      - TZ="Europe/Athens" 
-      - PLEX_CLAIM="claim-cAeJqTZ5qpASw9UbKzgo"
-      - ADVERTISE_IP="http://192.168.101.5:32400/" 
+      - TZ="Europe/Athens" # Change it with yours
+      - PLEX_CLAIM="<CLAIM CODE>" # get it from https://www.plex.tv/claim/
+      - ADVERTISE_IP="http://your_ip:32400/" # Your IP
     hostname: PlexServer
     volumes: 
       - ./database:/config 
       - ./transcode/temp:/transcode 
-      - /media/rocean/Spartacus/Movies:/data/Movies
-      - /media/rocean/Spartacus/TV:/data/TV
+      - /myPath/Movies:/data/Movies # Change it with your movies path
+      - /myPath/TV:/data/TV # Change it with your tv shows path
     network_mode: "host"
