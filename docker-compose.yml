@@ -23,7 +23,7 @@ services:
     hostname: PlexServer
     volumes: 
       - ./database:/config 
-      - ./transcode/temp>:/transcode 
+      - ./transcode/temp:/transcode 
       - /media/rocean/Spartacus/Movies:/data
       - /media/rocean/Spartacus/TV:/data
     network_mode: "host"
