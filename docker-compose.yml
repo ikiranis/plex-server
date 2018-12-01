@@ -24,6 +24,6 @@ services:
     volumes: 
       - ./database:/config 
       - ./transcode/temp:/transcode 
-      - /media/rocean/Spartacus/Movies:/data
-      - /media/rocean/Spartacus/TV:/data
+      - /media/rocean/Spartacus/Movies:/data/Movies
+      - /media/rocean/Spartacus/TV:/data/TV
     network_mode: "host"
